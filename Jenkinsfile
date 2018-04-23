@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         bat 'echo \'My first pipeline\''
-        echo 'env.BUILD_ID'
+        echo '${env.BUILD_ID}'
       }
     }
   }
