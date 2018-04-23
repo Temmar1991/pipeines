@@ -3,8 +3,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        bat 'make'
-        archiveArtifacts(artifacts: '**/target/*.jar', fingerprint: true)
+        bat 'echo \'My first pipeline\''
+        echo 'env.BUILD_ID'
       }
     }
   }
